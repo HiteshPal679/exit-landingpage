@@ -86,7 +86,7 @@ export default function Page() {
       `}</style>
 
       {/* NAVBAR */}
-      <header className="flex items-center justify-center px-10 md:px-20 py-6">
+      <header className="flex items-center justify-center px-5 sm:px-10 md:px-20 py-4 md:py-6">
         <div className="flex items-center gap-3">
           <Image
             src="/Final Milestone logo croped.png"
@@ -101,7 +101,7 @@ export default function Page() {
 
       {/* HERO */}
       <section
-        className="px-10 md:px-20 py-20 md:py-28 grid md:grid-cols-2 gap-16 items-center relative"
+        className="px-5 sm:px-10 md:px-20 py-12 sm:py-20 md:py-28 grid md:grid-cols-2 gap-10 md:gap-16 items-center relative"
         style={{
           backgroundImage:
             "linear-gradient(rgba(15,188,178,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(15,188,178,0.06) 1px, transparent 1px)",
@@ -109,20 +109,20 @@ export default function Page() {
         }}
       >
         <Animate animation="fade-left">
-          <div className="mt-[-50px]">
-            <h1 className="text-5xl md:text-5xl font-bold leading-tight">
+          <div className="md:mt-[-50px]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Attrition rarely starts
               <span className="text-teal-400"> <br/>with one exit.</span>
               <br/>It starts with a
               <span className="text-teal-400"><br/> pattern.</span>
             </h1>
 
-            <p className="mt-4 text-gray-300 leading-relaxed">
+            <p className="mt-4 text-gray-300 leading-relaxed text-sm sm:text-base">
               Milestones helps organisations decode the real drivers behind
               employee exits through independent conversations,behavioural insight, and structured analysis.
             </p>
 
-            <Button className="mt-8 bg-teal-400 text-white font-semibold hover:bg-teal-300  px-6">
+            <Button className="mt-6 md:mt-8 bg-teal-400 text-white font-semibold hover:bg-teal-300 px-6">
               Schedule a Demo <Image src="/Group.png" alt="" width={24} height={10} className="ml-2 h-auto w-6 inline-block" />
             </Button>
           </div>
@@ -136,82 +136,82 @@ export default function Page() {
               alt="Attrition drivers"
               width={400}
               height={300}
-              className="w-full max-w-[600px] h-auto"
+              className="w-full max-w-[400px] md:max-w-[600px] h-auto"
             />
           </div>
         </Animate>
       </section>
 
       {/* BUSINESS PROBLEM */}
-      <section className="px-10 md:px-20 py-24 bg-[#001C3D]">
+      <section className="px-5 sm:px-10 md:px-20 py-16 md:py-24 bg-[#001C3D]">
         <Animate>
-          <p className="text-teal-400 text-ml font-semibold tracking-wider uppercase mb-4">
+          <p className="text-teal-400 text-sm md:text-base font-semibold tracking-wider uppercase mb-4">
             The Business Problem
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold max-w-3xl leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold max-w-3xl leading-tight">
             What looks like individual resignations Is often a deeper organisational signal
           </h2>
-          <p className="mt-4  max-w-2xl">
+          <p className="mt-4 max-w-2xl text-sm sm:text-base">
             It is about lost productivity, hiring costs, and disrupted business continuity.
           </p>
         </Animate>
 
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16">
           <Animate animation="fade-up-stagger" delay={0}>
-            <div className="bg-[#102E54] rounded-2xl p-8">
-              <div className="w-12 h-12 rounded-xl bg-[#FF3B4A]/[0.18] flex items-center justify-center mb-6">
+            <div className="bg-[#102E54] rounded-2xl p-6 md:p-8">
+              <div className="w-12 h-12 rounded-xl bg-[#FF3B4A]/[0.18] flex items-center justify-center mb-4 md:mb-6">
                 <TrendingDown className="h-6 w-6 text-[#FF3B4A]" />
               </div>
-              <p className="text-[#FF3B4A] text-5xl font-bold">66%</p>
-              <p className="mt-4  text-base leading-relaxed">
-                say retention and turnover are top challenges <span className="text-sm">(Gallagher Workforce Trends Report)</span>
+              <p className="text-[#FF3B4A] text-4xl md:text-5xl font-bold">66%</p>
+              <p className="mt-3 md:mt-4 text-sm md:text-base leading-relaxed">
+                say retention and turnover are top challenges <span className="text-xs md:text-sm">(Gallagher Workforce Trends Report)</span>
               </p>
             </div>
           </Animate>
 
           <Animate animation="fade-up-stagger" delay={150}>
-            <div className="bg-[#0a2e4e] rounded-2xl p-8">
-              <div className="w-12 h-12 rounded-xl bg-[#FFA600]/[0.18] flex items-center justify-center mb-6">
+            <div className="bg-[#0a2e4e] rounded-2xl p-6 md:p-8">
+              <div className="w-12 h-12 rounded-xl bg-[#FFA600]/[0.18] flex items-center justify-center mb-4 md:mb-6">
                 <IndianRupee className="h-6 w-6 text-[#FFA600]" />
               </div>
-              <p className="text-[#FFA600] text-5xl font-bold">50- 200%</p>
-              <p className="mt-4  text-base leading-relaxed">
-                of annual salary is spent replacing an employee - far higher than retention costs <span className="text-sm">(SHRM, Gallup)</span>
+              <p className="text-[#FFA600] text-4xl md:text-5xl font-bold">50- 200%</p>
+              <p className="mt-3 md:mt-4 text-sm md:text-base leading-relaxed">
+                of annual salary is spent replacing an employee - far higher than retention costs <span className="text-xs md:text-sm">(SHRM, Gallup)</span>
               </p>
             </div>
           </Animate>
 
           <Animate animation="fade-up-stagger" delay={300}>
-            <div className="bg-[#0a2e4e] rounded-2xl p-8">
-              <div className="w-12 h-12 rounded-xl bg-[#2AAFFF]/[0.18] flex items-center justify-center mb-6">
+            <div className="bg-[#0a2e4e] rounded-2xl p-6 md:p-8 sm:col-span-2 md:col-span-1">
+              <div className="w-12 h-12 rounded-xl bg-[#2AAFFF]/[0.18] flex items-center justify-center mb-4 md:mb-6">
                 <TrendingUp className="h-6 w-6 text-[#2AAFFF]" />
               </div>
-              <p className="text-[#2AAFFF] text-5xl font-bold">94%</p>
-              <p className="mt-4 text-base leading-relaxed">
+              <p className="text-[#2AAFFF] text-4xl md:text-5xl font-bold">94%</p>
+              <p className="mt-3 md:mt-4 text-sm md:text-base leading-relaxed">
                 of early exits could be prevented if organisations acted on exit insights
               </p>
-              <p className="mt-2 text-sm">(LinkedIn Workplace Learning Report)</p>
+              <p className="mt-2 text-xs md:text-sm">(LinkedIn Workplace Learning Report)</p>
             </div>
           </Animate>
         </div>
 
         <Animate delay={100}>
-          <p className="mt-7">
+          <p className="mt-7 text-sm sm:text-base">
             Yet most organisations only see the exit, not the signals building up to it.
           </p>
         </Animate>
 
         {/* Signal Levels */}
-        <div className="mt-16 grid md:grid-cols-2 gap-12 items-start">
+        <div className="mt-12 md:mt-16 grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           <Animate animation="fade-left">
             <div>
-              <h3 className="text-4xl mt-12 font-bold leading-snug">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl mt-4 md:mt-12 font-bold leading-snug">
                 Milestones help organisations identify these signals early before attrition begins impacting business outcomes.
               </h3>
             </div>
           </Animate>
           <Animate animation="fade-right" delay={200}>
-            <div className="p-6 rounded-xl w-full">
+            <div className="p-3 sm:p-6 rounded-xl w-full space-y-2">
   {[
     {
       level: "External Market",
@@ -222,43 +222,40 @@ export default function Page() {
     {
       level: "Organisation",
       desc: "leadership culture, policies, career paths",
-      width: "w-[95%]",
+      width: "md:w-[95%] w-full",
       dot: "bg-blue-400",
     },
     {
       level: "Teams",
       desc: "manager behaviour, workload, collaboration",
-      width: "w-[90%]",
+      width: "md:w-[90%] w-full",
       dot: "bg-sky-400",
     },
     {
       level: "Individual",
       desc: "role clarity, recognition, growth",
-      width: "w-[85%]",
+      width: "md:w-[85%] w-full",
       dot: "bg-cyan-400",
     },
   ].map((item) => (
     <div
       key={item.level}
-      className={`${item.width} bg-[#001731] border border-[#0a69b1d0] rounded-xl px-6 py-3 flex items-center justify-between`}
+      className={`${item.width} bg-[#001731] border border-[#0a69b1d0] rounded-xl px-4 sm:px-6 py-3 flex items-center justify-between`}
     >
-      {/* LEFT TEXT */}
-      <p className="text-sm md:text-base">
+      <p className="text-xs sm:text-sm md:text-base">
         <span className="text-white font-semibold">
           {item.level}
         </span>{" "}
-        <span className="text-[#6B8FB3]">
+        <span className="text-[#6B8FB3] hidden sm:inline">
           {item.desc}
         </span>
       </p>
 
-      {/* RIGHT DOT */}
-      <div className={`w-2 h-2 rounded-full ${item.dot}`} />
+      <div className={`w-2 h-2 rounded-full shrink-0 ml-2 ${item.dot}`} />
     </div>
   ))}
 
-  {/* FOOTER TEXT */}
-  <p className="text-xs mt-4 ml-5.5">
+  <p className="text-xs mt-4 ml-1 sm:ml-5.5">
     Milestones studies attrition across all organisational layers, not just the final exit moment.
   </p>
 </div>
@@ -267,26 +264,26 @@ export default function Page() {
       </section>
 
 
-<section className="bg-[#EFF4F7] py-24 px-6 md:px-16 text-black">
+<section className="bg-[#EFF4F7] py-16 md:py-24 px-5 sm:px-6 md:px-16 text-black">
   {/* HEADER */}
   <Animate>
-    <p className="text-[#12B9B0] text-ml font-semibold uppercase text-center ">
+    <p className="text-[#12B9B0] text-sm md:text-base font-semibold uppercase text-center">
       Why Milestones
     </p>
 
-    <h2 className="text-3xl md:text-5xl font-bold text-center leading-tight">
+    <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center leading-tight">
       Traditional Exit Interviews Limit Insights
     </h2>
 
-    <p className="mt-2 text-gray-600 text-center max-w-2xl mx-auto text-base">
+    <p className="mt-2 text-gray-600 text-center max-w-2xl mx-auto text-sm sm:text-base">
       Most organisations already conduct exit interviews, but the insights rarely
       translate into organisational understanding.
     </p>
   </Animate>
 
-  {/* TABLE */}
+  {/* TABLE - Desktop */}
   <Animate animation="scale-in" delay={200}>
-    <div className="max-w-5xl mx-auto mt-16 rounded-2xl overflow-hidden border border-[#D5DEE6] bg-[#F8FBFD] shadow-sm">
+    <div className="hidden md:block max-w-5xl mx-auto mt-16 rounded-2xl overflow-hidden border border-[#D5DEE6] bg-[#F8FBFD] shadow-sm">
       <table className="w-full border-collapse">
         <thead>
           <tr>
@@ -342,16 +339,14 @@ export default function Page() {
           ].map((row, i) => (
             <tr
     key={i}
-    className={`border-t border-[#D5DEE6]  transition ${
+    className={`border-t border-[#D5DEE6] transition ${
       i % 2 !== 0 ? "bg-[#E9EFF5]" : ""
     }`}
   >
-              {/* ASPECT */}
               <td className="p-5 font-medium text-sm text-gray-800 border-r border-[#D5DEE6]">
                 {row.aspect}
               </td>
 
-              {/* TRADITIONAL */}
               <td className="p-5 text-sm text-gray-600 border-r border-[#D5DEE6]">
                 <div className="flex items-center gap-2">
                   <X className="h-4 w-4 text-gray-400 shrink-0" />
@@ -359,7 +354,6 @@ export default function Page() {
                 </div>
               </td>
 
-              {/* MILESTONES */}
               <td className="p-5 text-sm text-gray-700 bg-[#E6F4F1]">
                 <div className="flex items-center gap-2">
                   <Check className="h-4 w-4 text-teal-500 shrink-0" />
@@ -371,11 +365,60 @@ export default function Page() {
         </tbody>
       </table>
     </div>
+
+    {/* TABLE - Mobile Cards */}
+    <div className="md:hidden mt-10 space-y-4">
+      {[
+        {
+          aspect: "Who Conducts it",
+          traditional: "Internally within the organisation",
+          milestones: "An independent third-party partner",
+        },
+        {
+          aspect: "Quality of feedback",
+          traditional: "Tends to be guarded or diplomatic",
+          milestones: "Neutral, candid, reflective",
+        },
+        {
+          aspect: "Analysis depth",
+          traditional: "Generic exit reason documented",
+          milestones: "Pattern detection across exit datasets",
+        },
+        {
+          aspect: "Timing",
+          traditional: "Focused only on the final exit moment",
+          milestones: "Connected insights across the employee lifecycle",
+        },
+        {
+          aspect: "Output",
+          traditional: "Conducted immediately after exit or FNF",
+          milestones: "Delayed exit interviews with honest insights",
+        },
+      ].map((row, i) => (
+        <div key={i} className="bg-white rounded-xl border border-[#D5DEE6] overflow-hidden shadow-sm">
+          <div className="bg-[#E9EFF5] px-4 py-3">
+            <p className="font-semibold text-sm text-gray-800">{row.aspect}</p>
+          </div>
+          <div className="px-4 py-3 border-b border-[#D5DEE6]">
+            <div className="flex items-start gap-2">
+              <X className="h-4 w-4 text-gray-400 shrink-0 mt-0.5" />
+              <p className="text-sm text-gray-600">{row.traditional}</p>
+            </div>
+          </div>
+          <div className="px-4 py-3 bg-[#E6F4F1]">
+            <div className="flex items-start gap-2">
+              <Check className="h-4 w-4 text-teal-500 shrink-0 mt-0.5" />
+              <p className="text-sm text-gray-700">{row.milestones}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
   </Animate>
 
   {/* FOOTER */}
   <Animate delay={300}>
-    <p className="mt-7 text-center text-gray-700 text-base">
+    <p className="mt-7 text-center text-gray-700 text-sm sm:text-base">
       The difference is not collecting feedback. The difference is{" "}
       <span className="text-[#12B9B0] font-semibold">
         interpreting what it means.
@@ -385,27 +428,27 @@ export default function Page() {
 </section>
 
       {/* THE MILESTONES METHOD - Triangle */}
-      <section className="bg-gray-50 text-black py-28 px-10 md:px-20 text-center">
+      <section className="bg-gray-50 text-black py-16 md:py-28 px-5 sm:px-10 md:px-20 text-center">
         <Animate>
-          <p className="text-teal-500 text-ml font-semibold tracking-wider uppercase ">
+          <p className="text-teal-500 text-sm md:text-base font-semibold tracking-wider uppercase">
             The Milestones Method
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
             Attrition has no single cause.<br/>
             Understanding it requires more than one lens.
           </h2>
 
-          <p className="mt-5 text-teal-500 text-ml text-base">Milestones Combines</p>
+          <p className="mt-5 text-teal-500 text-sm md:text-base">Milestones Combines</p>
         </Animate>
 
         {/* Triangle Image with Labels */}
         <Animate animation="scale-in" delay={200}>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-8 md:mt-10 flex justify-center">
             <div className="w-full max-w-[900px]">
               {/* Top Label - HR Expertise */}
               <div className="text-center mb-1">
-                <p className="font-bold text-lg">HR Expertise</p>
-                <p className="text-sm text-gray-500">Organisational structures<br />and leadership dynamics</p>
+                <p className="font-bold text-base md:text-lg">HR Expertise</p>
+                <p className="text-xs md:text-sm text-gray-500">Organisational structures<br />and leadership dynamics</p>
               </div>
 
               <Image
@@ -416,15 +459,15 @@ export default function Page() {
                 className="w-full h-auto"
               />
 
-              {/* Bottom Labels - positioned to align with bottom-left and bottom-right icons */}
-              <div className="flex justify-between -mt-40 gap-20">
-                <div className="text-center w-[220px] -ml-10">
-                  <p className="font-bold text-lg">Behavioural Psychology</p>
-                  <p className="text-sm text-gray-500">Motivations behind employee<br />decisions</p>
+              {/* Bottom Labels */}
+              <div className="flex justify-between -mt-10 sm:-mt-20 md:-mt-40 gap-4 sm:gap-10 md:gap-20">
+                <div className="text-center w-[140px] sm:w-[180px] md:w-[220px] -ml-2 sm:-ml-6 md:-ml-10">
+                  <p className="font-bold text-xs sm:text-sm md:text-lg">Behavioural Psychology</p>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-gray-500">Motivations behind employee<br />decisions</p>
                 </div>
-                <div className="text-center w-[220px] -mr-12">
-                  <p className="font-bold text-lg">Technology & AI</p>
-                  <p className="text-sm text-gray-500">Pattern detection across exit<br />insights</p>
+                <div className="text-center w-[140px] sm:w-[180px] md:w-[220px] -mr-2 sm:-mr-6 md:-mr-12">
+                  <p className="font-bold text-xs sm:text-sm md:text-lg">Technology & AI</p>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-gray-500">Pattern detection across exit<br />insights</p>
                 </div>
               </div>
             </div>
@@ -432,9 +475,9 @@ export default function Page() {
         </Animate>
 
         <Animate delay={400}>
-          <div className="mt-16 max-w-2xl mx-auto">
-            <div className="bg-gray-100 border border-gray-300 rounded-xl px-5 py-4">
-              <p className="text-sm font-semibold text-gray-600">
+          <div className="mt-10 md:mt-16 max-w-2xl mx-auto">
+            <div className="bg-gray-100 border border-gray-300 rounded-xl px-4 md:px-5 py-3 md:py-4">
+              <p className="text-xs md:text-sm font-semibold text-gray-600">
                 This triangulation allows us to move from isolated feedback to systemic understanding
               </p>
             </div>
@@ -443,23 +486,23 @@ export default function Page() {
       </section>
 
       {/* DASHBOARD PREVIEW */}
-      <section className="px-10 md:px-20 py-24 text-center bg-[#001C3D]">
+      <section className="px-5 sm:px-10 md:px-20 py-16 md:py-24 text-center bg-[#001C3D]">
         <Animate>
-          <p className="text-teal-400 text-ml font-semibold tracking-wider uppercase mb-4">
+          <p className="text-teal-400 text-sm md:text-base font-semibold tracking-wider uppercase mb-4">
             Attrition Intelligence Dashboard
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold">
             A Unified View of Attrition Intelligence
           </h2>
 
-          <p className="mt-4 text-white max-w-3xl mx-auto text-base">
+          <p className="mt-4 text-white max-w-3xl mx-auto text-sm sm:text-base">
             Milestones brings all exit insights together into a single consolidated view, allowing leadership teams to track how attrition signals are evolving across the organisation.
           </p>
         </Animate>
 
         {/* Dashboard Screenshot */}
         <Animate animation="scale-in" delay={200}>
-          <div className="mt-12 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-2xl shadow-black/40">
+          <div className="mt-8 md:mt-12 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-2xl shadow-black/40">
             <Image
               src="/Dashboard.png"
               alt="Milestones Dashboard"
@@ -472,16 +515,16 @@ export default function Page() {
 
         {/* Feature Pills */}
         <Animate delay={400}>
-          <div className="flex flex-wrap justify-center gap-3 mt-10 max-w-6xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-8 md:mt-10 max-w-6xl mx-auto">
             {[
               "Exit reasons across departments",
               "Sentiment, leadership, and loyalty indicators",
               "Interview progress and response rates",
               "Follow-ups and report generation",
             ].map((item) => (
-              <div key={item} className="flex items-center gap-2 bg-[#001731] border border-[#0a69b1d0]  rounded-md px-5 py-2.5">
-                <div className="w-2 h-2 bg-teal-400 rounded-full" />
-                <span className="text-xs text-gray-300">{item}</span>
+              <div key={item} className="flex items-center gap-2 bg-[#001731] border border-[#0a69b1d0] rounded-md px-3 sm:px-5 py-2 sm:py-2.5">
+                <div className="w-2 h-2 bg-teal-400 rounded-full shrink-0" />
+                <span className="text-[10px] sm:text-xs text-gray-300">{item}</span>
               </div>
             ))}
           </div>
@@ -489,38 +532,38 @@ export default function Page() {
       </section>
 
       {/* INSIGHT → ACTION */}
-      <section className="bg-white text-black py-24 px-10 md:px-20 text-center">
+      <section className="bg-white text-black py-16 md:py-24 px-5 sm:px-10 md:px-20 text-center">
         <Animate>
-          <p className="text-teal-400 text-ml font-semibold tracking-wider uppercase mb-4">
+          <p className="text-teal-400 text-sm md:text-base font-semibold tracking-wider uppercase mb-4">
             Insight &rarr; Action
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold">
             Every employee exit leaves behind a signal
           </h2>
 
-          <p className="mt-4 text-gray-500 max-w-3xl mx-auto text-base"> Milestones help leadership teams move from reactive headcount management to informed,
+          <p className="mt-4 text-gray-500 max-w-3xl mx-auto text-sm sm:text-base"> Milestones help leadership teams move from reactive headcount management to informed,
             proactive decisions and finally identifying where intervention is needed before attrition compounds.</p>
         </Animate>
       </section>
 
       {/* CTA */}
-      <section className="bg-[#001C3D] text-center py-24 px-10">
+      <section className="bg-[#001C3D] text-center py-16 md:py-24 px-5 sm:px-10">
         <Animate>
-          <p className="text-teal-400 text-ml font-semibold tracking-wider uppercase mb-4">
+          <p className="text-teal-400 text-sm md:text-base font-semibold tracking-wider uppercase mb-4">
             Ready to Listen?
           </p>
-          <h2 className="text-3xl md:text-5xl font-semibold">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold">
             Listen to what your exits
           </h2>
-          <h2 className="text-3xl md:text-5xl font-semibold text-teal-400 mt-2">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-teal-400 mt-2">
              are trying to tell you
           </h2>
 
-          <p className="mt-6 ">
+          <p className="mt-4 md:mt-6 text-sm sm:text-base">
             Milestones transform employee departures into meaningful organisational insight.
           </p>
 
-          <Button className="mt-8 bg-teal-400 text-white font-semibold hover:bg-teal-300  px-6">
+          <Button className="mt-6 md:mt-8 bg-teal-400 text-white font-semibold hover:bg-teal-300 px-6">
               Schedule a Demo <Image src="/Group.png" alt="" width={24} height={10} className="ml-2 h-auto w-6 inline-block" />
             </Button>
         </Animate>
